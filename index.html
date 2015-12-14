@@ -9,19 +9,24 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Signika+Negative' rel='stylesheet' type='text/css'>
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <link href="css/style.css" rel="stylesheet">
+    <link href="css/loginstyle.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/ihover.css" rel="stylesheet">
+    
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Signika+Negative' rel='stylesheet' type='text/css'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="shortcut icon" href="img/logo.png">
-  <link href="css/ihover.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ 
+    <!-- logo -->
+    <link rel="shortcut icon" href="img/logo.png">
+  
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,14 +46,12 @@
 				   <span class="sr-only">Toggle Navigation</span>
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           
+           <span class="icon-bar"></span>  
 			   </button>
          
          <a class="navbar-brand" href="#">
-           
            <div class="logo">
-            <img class="wow bounceInLeft"src="img/logo.png">
+   <!--         <img class="wow bounceInLeft"src="img/logo.png">-->
            </div>
          </a>
 		   </div>
@@ -62,28 +65,110 @@
            <li><a href="#gallery">GALLERY</a></li>
            <li><a href="#services">SERVICES</a></li>
             <li><a href="#about">ABOUT</a></li>
-          
-             
-       
+            <li><a href="#login" data-toggle="modal" data-target="#login-modal">LOGIN</a></li>
           </ul>
-      
-          
-      <!--  <ul class="nav navbar-drop navbar-right">
-           <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">AGENTS <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="allagent">ALL AGENTS</a></li>
-            <li><a href="agentprofile">AGENT PROFILE</a></li>
-          
-          </ul> -->
        </div>
       
 	   </div>
-   	
-   
    </nav>
  
-   
+ <!--MODAL LOGIN -->
+  
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img-circle" id="img_logo" src="img/logo.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div> 
+<!--DIV Form -->
+                <div id="div-forms">
+ 
+<!--Login Form -->
+                <form id="login-form">
+                <div class="modal-body">
+                <div id="div-login-msg">
+                    <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                    <span id="text-login-msg">Type your username and password</span>
+                    </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                      <div class="checkbox">
+                          <label>
+                             <input type="checkbox"> Remember me
+                          </label>
+                      </div>
+        		    </div>
+                
+				        <div class="modal-footer">
+                      <div>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                      </div>
+				    	  <div>
+                      <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                      <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                </div>
+				        </div>
+                </form>
+<!-- End of Login Form -->
+                    
+<!-- Begin of Lost Password Form -->
+                <form id="lost-form" style="display:none;">
+    	    		   <div class="modal-body">
+		    				  <div id="div-lost-msg">
+                      <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                      <span id="text-lost-msg">Type your e-mail.</span>
+                  </div>
+		    				  <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            		</div>
+		    		    <div class="modal-footer">
+                  <div>
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                  </div>
+                  <div>
+                      <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                      <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                  </div>
+		    		    </div>
+                    </form>
+<!-- End of Lost Password Form -->
+                    
+<!-- Begin of Register Form -->
+                <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+                      
+		    				<div id="div-register-msg">
+                    <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                    <span id="text-register-msg">Register an account.</span>
+                </div>
+                
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+                  
+		    		    <div class="modal-footer">
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                    </div>
+                    <div>
+                        <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                        <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                    </div>
+		    		    </div>
+                </form>
+                    <!-- End of Register Form -->
+                    
+                </div>
+                <!-- End of DIV Form -->
+                
+			</div>
+		</div>
+</div>
+
+<!-- end of login modal-->
    <!-- slider -->
   <section id="slider" class="text-center">
       <div class="container" id="home">
@@ -150,8 +235,7 @@
    <div class="col-sm-12 text-center">
        
     <h1>Our Team</h1>
-    <p></p>
-    <p></p>
+    <h2></h2>
      
        
       </div>
@@ -259,18 +343,55 @@
 
 
 <!-- end footer -->
-     <script src="js/grayscale.js"></script>
+
+    <!-- jquery -->
+   
     <script src="js/jquery.js"></script>
-<script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-<!--    <script src="js/parallax.js"></script> -->
-   <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    
+    <!-- source -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/loginjs.js"></script>
+    <script src="js/wow.min.js"></script>
+    
+    <!-- inline js -->
+    <script>
+      new WOW().init();
+    </script>
+    
+    <script>
+        $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+    <!-- navbar collapse -->
+     <script>
+     $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+    });
+
+    </script>
  
  <!-- <script>
     (function ($) {
@@ -294,21 +415,7 @@
     
     }(jQuery));
     </script>-->
-    <script>$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+   
     
 <!--  <script>
 $(function(){
@@ -339,19 +446,10 @@ $(window).scroll(function(){
 });
     
     </script> -->
-   <script>
-     $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
-</script>
+  
   
   
 
 
-  </body>
+</body>
 </html>

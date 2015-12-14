@@ -3,11 +3,11 @@
 html,
 body {
     height: 100%;
+	width: 100%;
 }
+
 p, h1{
 	font-family: 'Signika Negative', sans-serif;
-	
-	
 }
 
 
@@ -20,42 +20,31 @@ p, h1{
     width: 100%;
     border-radius: 0px;
     z-index: 10007;
-	
 	font-size: 1.0em;
 	letter-spacing: 1px;*/
-		padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-	 
+	padding: 20px 0;
+	border-bottom: 0;
+	letter-spacing: 1px;
+	background: 0 0;
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+
 }
 
 .navbar-nav{
-	
-	
+
+
 	margin:35px 100px 10px;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 1.2em;
 }
 
- 
-
 .navbar-default .navbar-nav li a {
-	
 	color:#fff;
-	
-	
 }
-    
-
-	
-
 
 .navbar-default .navbar-nav li a:hover{
-	
 	color:#16a085;
 }
 
@@ -63,10 +52,8 @@ p, h1{
  	color:#16a085;
 }
 
-
-
 .logo img {
-	
+
 	margin:15px 0 0 50px;
 }
 
@@ -74,14 +61,14 @@ p, h1{
 
 .logotext{
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	
+
 }
 @media(max-width:768px){
-	
+
 	.logo img{
 		margin:15px 0 0 15px;
 	}
-	
+
 }
 .navbar-default.top-nav-collapse {
         padding: 0;
@@ -89,18 +76,15 @@ p, h1{
         background: #222;
  }
 .navbar-nav {
-	
 	margin:15px;
-
 }
 
 .navbar-toggle{
-	
 	margin-top:45px;
 }
 
 /*.navbar-nav > li > a, .navbar-brand {
-    padding-top:4px !important; 
+    padding-top:4px !important;
     padding-bottom:0 !important;
     height: 28px;
 }
@@ -117,16 +101,13 @@ p, h1{
 }
 
 #footer img{
-	
 	margin:0 auto;
 }
 /*slider*/
 
 #slider{
-	
 	background:url('../img/slide2.jpg') no-repeat center center fixed;
-	
-	 width: 100%;
+	width: 100%;
     height: 100%;
     background-position: center;
     -webkit-background-size: cover;
@@ -134,7 +115,6 @@ p, h1{
     background-size: cover;
     -o-background-size: cover;
 }
-
 
 .item{
 	color:#fff;
@@ -145,23 +125,18 @@ p, h1{
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
-	
 	line-height:50px;
 	margin-bottom:25px;
 	font-size: 2.8em;
-	
-	
 }
 
 .item h2{
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
-	
 	line-height:50px;
 	margin-bottom:25px;
 	font-size: 2.8em;
-	
 }
 
 .carousel-inner {
@@ -174,11 +149,11 @@ p, h1{
 }
 
 .carousel-indicators .active{
-	
 	background-color: #16a085;
 	border:1px solid #16a085;
 	margin:5px;
 }
+
 .carousel,
 .item,
 .active {
@@ -217,25 +192,30 @@ p, h1{
 
 #photo {
 	background-color:#f5f6f7;
-	padding:5em 0;
 	text-align: center;
-	
-	
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
 }
+
 #photo p{
 	font-size: 1.4em;
 	font-weight: 700;
-	
+
 }
+
 #photo h1{
 	font-size: 2.0em;
 	font-weight: 700;
 	color:#16a085;
-	margin-top: 0;
+	margin-top: 100px;
 }
 
 #photo .fa{
-	
 	color:#16a085;
 }
 
@@ -247,20 +227,22 @@ p, h1{
 /*signup*/
 
 #signup{
-	
 	background:url('../img/interior.jpg') no-repeat center center fixed;
 	width: 100%;
-	background: cover;
-	padding: 300px 0 300px;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	/* padding: 300px 0 300px; */
 }
 
 #signup h1{
-	
+	margin-top: 250px;
 	font-size:1.5em;
 	font-weight:700;
 	color: #16a085;
 	text-align: center;
-	
 }
 
 #signup .btn-default{
@@ -275,19 +257,15 @@ p, h1{
 
 #signup .fa{
 	color:#fff;
-	
 }
 
 /*agent*/
 
 #agent{
-		
 	background-color: #fff;
 	padding: 50px 0 50px;
-	
 }
 #agent h1{
-	
 	font-size: 2.8em;
 	font-weight: 700;
 	color:#16a085;
@@ -300,24 +278,22 @@ p, h1{
 #footer{
 	padding: 50px 0 50px;
 }
+
 #footer p{
 	font-weight: 700;
 }
 
 #footer a{
 	color:#000;
-	  
+
 }
 
 #footer a:hover{
-	
 	color:#16a085;
 	text-decoration: none;
 }
 
-
 #search {
-	
 	padding: 80px 0 80px;
 	width: 100%;
 }
@@ -409,3 +385,4 @@ transform:translatey(0);
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
+
